@@ -67,6 +67,13 @@
     }
 }
 
+//-(void)deleteEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {}
+
+//-(void)findEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {}
+
+//-(void)modifyEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {}
+
+
 //delegate method for EKEventEditViewDelegate
 -(void)eventEditViewController:(EKEventEditViewController *)controller didCompleteWithAction:(EKEventEditViewAction)action {
     [self dismissModalViewControllerAnimated:YES];

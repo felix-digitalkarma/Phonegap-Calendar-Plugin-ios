@@ -13,9 +13,23 @@ function calendarPlugin()
 
 
 calendarPlugin.prototype.createEvent = function(title,location,notes,startDate,endDate) {
-    //PhoneGap.exec('calendarPlugin.createEvent');
     PhoneGap.exec(null, null, "calendarPlugin", "createEvent", [title,location,notes,startDate,endDate]);
 };
+
+//calendarPlugin.prototype.modifyEvent = function(title,location,notes,startDate,endDate) {
+//    PhoneGap.exec(null, null, "calendarPlugin", "modifyEvent", [title,location,notes,startDate,endDate]);
+//};
+
+
+//calendarPlugin.prototype.deleteEvent = function(title,location,notes,startDate,endDate) {
+//    PhoneGap.exec(null, null, "calendarPlugin", "deleteEvent", [title,location,notes,startDate,endDate]);
+//};
+
+
+//calendarPlugin.prototype.findEvent = function(title,location,notes,startDate,endDate) {
+//    PhoneGap.exec(null, null, "calendarPlugin", "findEvent", [title,location,notes,startDate,endDate]);
+//};
+
 
 
 calendarPlugin.install = function()
