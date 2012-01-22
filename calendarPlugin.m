@@ -67,6 +67,46 @@
     }
 }
 
+//-(NSArray *) fetchEvents {
+    store = [[EKEventStore alloc] init];
+    myEvent = [EKEvent eventWithEventStore: store];
+    
+    NSString *startSearchDate  = [arguments objectAtIndex:1];
+    NSString *endSearchDate    = [arguments objectAtIndex:2];
+    
+    
+    //creating the dateformatter object
+    NSDateFormatter *sDate = [[[NSDateFormatter alloc] init] autorelease];
+    [sDate setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *myStartDate = [sDate dateFromString:startSearchDate];
+    
+    
+    NSDateFormatter *eDate = [[[NSDateFormatter alloc] init] autorelease];
+    [eDate setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *myEndDate = [eDate dateFromString:endSearchDate];
+
+    
+    NSArray *calendarArray = [NSArray arrayWithObject:defaultCalendar];
+    NSPredicate *predicate = [self.eventStore
+                              predicateForEventsWithStartDate:startDate
+                              endDate:endDate calendars:calendarArray];
+    NSArray *eventList = [self.eventStore
+                          eventsMatchingPredicate:predicate];
+    return eventList;
+}
+
+//- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.title = @"Event List";
+    self.eventStore = [[EKEventStore alloc] init];
+    self.defaultCalendar = [self.eventStore defaultCalendarForNewEvents];
+    self.events = [NSArray arrayWithArray:[self fetchEventsForTommorrow]];
+}
+
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
 //-(void)deleteEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {}
 
 /*-(void)findEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {

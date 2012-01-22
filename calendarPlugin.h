@@ -20,6 +20,7 @@
     
 	EKEventStore *eventStore;
     EKCalendar *defaultCalendar;
+    NSArray *events;
     
     //future plan to have global type variables
     EKEvent *myEvent;
@@ -27,9 +28,11 @@
     
 }
 
+@property (nonatomic,retain) NSArray *events;
 @property (nonatomic,retain) EKEventStore *eventStore;
 @property (nonatomic,retain) EKCalendar *defaultCalendar;
 
+-(NSArray *)fetchEvents;
 
 // Calendar Instance methods
 - (void)createEvent:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
