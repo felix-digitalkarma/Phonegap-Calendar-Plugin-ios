@@ -69,9 +69,46 @@
 
 //-(void)deleteEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {}
 
-//-(void)findEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {}
+/*-(void)findEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {
+    
+    store = [[EKEventStore alloc] init];
+    myEvent = [EKEvent eventWithEventStore: store];
 
-//-(void)modifyEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {}
+    NSString *startSearchDate  = [arguments objectAtIndex:1];
+    NSString *endSearchDate    = [arguments objectAtIndex:2];
+    
+    
+    //creating the dateformatter object
+    NSDateFormatter *sDate = [[[NSDateFormatter alloc] init] autorelease];
+    [sDate setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *myStartDate = [sDate dateFromString:startSearchDate];
+    
+    
+    NSDateFormatter *eDate = [[[NSDateFormatter alloc] init] autorelease];
+    [eDate setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *myEndDate = [eDate dateFromString:endSearchDate];
+
+    
+    // Create the predicate
+    NSPredicate *predicate = [eventStore predicateForEventsWithStartDate:myStartDate endDate:myEndDate calendars:defaultCalendar]; 
+    
+    
+    // eventStore is an instance variable.
+    // Fetch all events that match the predicate.
+    NSArray *events = [eventStore eventsMatchingPredicate:predicate];
+    [self setEvents:events];
+    
+    
+}
+
+//-(void)modifyEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options{
+    EKEventViewController *eventViewController = [[EKEventViewController alloc] init];
+    eventViewController.event = myEvent;
+    eventViewController.allowsEditing = YES;
+    navigationController = [[UINavigationController alloc]
+                            initWithRootViewController:eventViewController];
+    [eventViewController release];
+}*/
 
 
 //delegate method for EKEventEditViewDelegate
