@@ -48,7 +48,7 @@ var app = {
     },
     
     createMyEvent : function(){
-        var cal = new calendarPlugin();
+        var cal = window.plugins.calendarPlugin;
         
         console.log("creating event");
         var title= "My Sample Appt";
