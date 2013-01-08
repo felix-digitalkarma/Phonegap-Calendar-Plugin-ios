@@ -6,6 +6,7 @@
 //  
 //  Collaborators:
 //  Michael Brooks
+//  Sean Bedford
 //
 //  Notes: this is a basic plugin which creates an event to the user's local calendar. There are methods that I'm working on for fetching an event, modifying and deleting 
 //  events in the calendar. 
