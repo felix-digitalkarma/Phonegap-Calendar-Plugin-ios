@@ -26,7 +26,7 @@ calendarPlugin.prototype.createEvent = function(title,location,notes,startDate,e
         console.log("calendarPlugin.createEvent failure: successCallback parameter must be a function");
         return
     }
-    cordova.exec(successCallback,errorCallback,"calendarPlugin","createEvent", [title,location,notes,startDate,endDate]);
+    cordova.exec(successCallback,errorCallback,"calendarPlugin","createEvent", [successCallback,errorCallback,title,location,notes,startDate,endDate]);
 };
 
 calendarPlugin.prototype.deleteEvent = function(title,location,notes,startDate,endDate, successCallback, errorCallback) {
@@ -39,7 +39,7 @@ calendarPlugin.prototype.deleteEvent = function(title,location,notes,startDate,e
         console.log("calendarPlugin.deleteEvent failure: successCallback parameter must be a function");
         return
     }
-    cordova.exec(successCallback,errorCallback,"calendarPlugin","deleteEvent", [title,location,notes,startDate,endDate]);
+    cordova.exec(successCallback,errorCallback,"calendarPlugin","deleteEvent", [successCallback,errorCallback,title,location,notes,startDate,endDate]);
 }
 
 calendarPlugin.prototype.findEvent = function(title,location,notes,startDate,endDate, successCallback, errorCallback) {
@@ -52,7 +52,7 @@ calendarPlugin.prototype.findEvent = function(title,location,notes,startDate,end
         console.log("calendarPlugin.findEvent failure: successCallback parameter must be a function");
         return
     }
-    cordova.exec(successCallback,errorCallback,"calendarPlugin","findEvent", [title,location,notes,startDate,endDate]);
+    cordova.exec(successCallback,errorCallback,"calendarPlugin","findEvent", [successCallback,errorCallback,title,location,notes,startDate,endDate]);
 }
 
 calendarPlugin.prototype.modifyEvent = function(title,location,notes,startDate,endDate, successCallback, errorCallback) {
@@ -65,7 +65,7 @@ calendarPlugin.prototype.modifyEvent = function(title,location,notes,startDate,e
         console.log("calendarPlugin.modifyEvent failure: successCallback parameter must be a function");
         return
     }
-    cordova.exec(successCallback,errorCallback,"calendarPlugin","modifyEvent", [title,location,notes,startDate,endDate]);
+    cordova.exec(successCallback,errorCallback,"calendarPlugin","modifyEvent", [successCallback,errorCallback,title,location,notes,startDate,endDate]);
 }
 
 calendarPlugin.install = function()
