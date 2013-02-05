@@ -29,6 +29,7 @@
 }
 
 - (void)initEventStoreWithCalendarCapabilities {
+    
     // Check for EventStore that is useful
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) {
         // Need to request calendar permissions
@@ -85,14 +86,14 @@
 {
     EKEvent *myEvent = [EKEvent eventWithEventStore: self.eventStore];
     // Import arguments
-    NSString *succFunc = [arguments objectAtIndex:0];
-    NSString *errFunc = [arguments objectAtIndex:1];
-    NSString* title      = [arguments objectAtIndex:2];
-    NSString* location   = [arguments objectAtIndex:3];
-    NSString* message    = [arguments objectAtIndex:4];
-    NSString *startDate  = [arguments objectAtIndex:5];
-    NSString *endDate    = [arguments objectAtIndex:6];
     
+    NSString* title      = [arguments objectAtIndex:0];
+    NSString* location   = [arguments objectAtIndex:1];
+    NSString* message    = [arguments objectAtIndex:2];
+    NSString *startDate  = [arguments objectAtIndex:3];
+    NSString *endDate    = [arguments objectAtIndex:4];
+    NSString *succFunc = [arguments objectAtIndex:5];
+    NSString *errFunc = [arguments objectAtIndex:6];
     
     //creating the dateformatter object
     NSDateFormatter *df = [[[NSDateFormatter alloc] init] autorelease];
@@ -115,6 +116,18 @@
     NSError *error = nil;
     [self.eventStore saveEvent:myEvent span:EKSpanThisEvent error:&error];
     
+    BOOL saved = [self.eventStore saveEvent:myEvent span:EKSpanThisEvent
+                            error:&error];
+    if (saved) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                        message:@"Saved to Calendar" delegate:self
+                                              cancelButtonTitle:@"Thank you!"
+                                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+        
+        
+    }
     // Check error code + return result
     if (error) {
         CDVPluginResult * pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR
@@ -123,6 +136,7 @@
         
     }
     else {
+        NSLog(@"Reached Success");
         CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
         [self writeJavascript:[pluginResult toSuccessCallbackString:succFunc]];
     }
@@ -130,13 +144,14 @@
 
 -(void)deleteEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {
     // Import arguments
-    NSString *succFunc = [arguments objectAtIndex:0];
-    NSString *errFunc = [arguments objectAtIndex:1];
-    NSString* title      = [arguments objectAtIndex:2];
-    NSString* location   = [arguments objectAtIndex:3];
-    NSString* message    = [arguments objectAtIndex:4];
-    NSString *startDate  = [arguments objectAtIndex:5];
-    NSString *endDate    = [arguments objectAtIndex:6];
+   
+    NSString* title      = [arguments objectAtIndex:0];
+    NSString* location   = [arguments objectAtIndex:1];
+    NSString* message    = [arguments objectAtIndex:2];
+    NSString *startDate  = [arguments objectAtIndex:3];
+    NSString *endDate    = [arguments objectAtIndex:4];
+    NSString *succFunc = [arguments objectAtIndex:5];
+    NSString *errFunc = [arguments objectAtIndex:6];
     
     NSDateFormatter *df = [[[NSDateFormatter alloc] init] autorelease];
     [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
@@ -166,13 +181,14 @@
 }
 
 -(void)findEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {
-    NSString *succFunc = [arguments objectAtIndex:0];
-    NSString *errFunc = [arguments objectAtIndex:1];
-    NSString* title      = [arguments objectAtIndex:2];
-    NSString* location   = [arguments objectAtIndex:3];
-    NSString* message    = [arguments objectAtIndex:4];
-    NSString *startDate  = [arguments objectAtIndex:5];
-    NSString *endDate    = [arguments objectAtIndex:6];
+    
+    NSString* title      = [arguments objectAtIndex:0];
+    NSString* location   = [arguments objectAtIndex:1];
+    NSString* message    = [arguments objectAtIndex:2];
+    NSString *startDate  = [arguments objectAtIndex:3];
+    NSString *endDate    = [arguments objectAtIndex:4];
+    NSString *succFunc = [arguments objectAtIndex:5];
+    NSString *errFunc = [arguments objectAtIndex:6];
     
     NSDateFormatter *df = [[[NSDateFormatter alloc] init] autorelease];
     [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
@@ -198,13 +214,14 @@
 
  
 -(void)modifyEvent:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options {
-    NSString *succFunc = [arguments objectAtIndex:0];
-    NSString *errFunc = [arguments objectAtIndex:1];
-    NSString* title      = [arguments objectAtIndex:2];
-    NSString* location   = [arguments objectAtIndex:3];
-    NSString* message    = [arguments objectAtIndex:4];
-    NSString *startDate  = [arguments objectAtIndex:5];
-    NSString *endDate    = [arguments objectAtIndex:6];
+    
+    NSString* title      = [arguments objectAtIndex:0];
+    NSString* location   = [arguments objectAtIndex:1];
+    NSString* message    = [arguments objectAtIndex:2];
+    NSString *startDate  = [arguments objectAtIndex:3];
+    NSString *endDate    = [arguments objectAtIndex:4];
+    NSString *succFunc = [arguments objectAtIndex:5];
+    NSString *errFunc = [arguments objectAtIndex:6];
     
     // Make NSDates from our strings
     NSDateFormatter *df = [[[NSDateFormatter alloc] init] autorelease];

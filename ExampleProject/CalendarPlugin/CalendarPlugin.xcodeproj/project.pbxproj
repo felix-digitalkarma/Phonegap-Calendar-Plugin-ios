@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC46F5F9153AB03200AE865D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F5F8153AB03200AE865D /* Foundation.framework */; };
+		CC46F5FB153AB03200AE865D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F5FA153AB03200AE865D /* UIKit.framework */; };
+		CC46F5FD153AB03200AE865D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F5FC153AB03200AE865D /* CoreGraphics.framework */; };
+		CC46F5FF153AB03200AE865D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F5FE153AB03200AE865D /* AddressBook.framework */; };
+		CC46F601153AB03200AE865D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F600153AB03200AE865D /* AddressBookUI.framework */; };
+		CC46F603153AB03200AE865D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F602153AB03200AE865D /* AudioToolbox.framework */; };
+		CC46F605153AB03200AE865D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F604153AB03200AE865D /* AVFoundation.framework */; };
+		CC46F607153AB03200AE865D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F606153AB03200AE865D /* CoreLocation.framework */; };
+		CC46F609153AB03200AE865D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F608153AB03200AE865D /* MediaPlayer.framework */; };
+		CC46F60B153AB03200AE865D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F60A153AB03200AE865D /* QuartzCore.framework */; };
+		CC46F60D153AB03200AE865D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F60C153AB03200AE865D /* SystemConfiguration.framework */; };
+		CC46F60F153AB03200AE865D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F60E153AB03200AE865D /* MobileCoreServices.framework */; };
+		CC46F611153AB03200AE865D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F610153AB03200AE865D /* CoreMedia.framework */; };
+		CC46F617153AB03200AE865D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC46F615153AB03200AE865D /* InfoPlist.strings */; };
+		CC46F619153AB03200AE865D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC46F618153AB03200AE865D /* main.m */; };
+		CC46F61C153AB03200AE865D /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F61B153AB03200AE865D /* Cordova.framework */; };
+		CC46F621153AB03300AE865D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC46F61F153AB03300AE865D /* Localizable.strings */; };
+		CC46F625153AB03300AE865D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC46F623153AB03300AE865D /* Localizable.strings */; };
+		CC46F629153AB03300AE865D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC46F627153AB03300AE865D /* Localizable.strings */; };
+		CC46F62D153AB03300AE865D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC46F62B153AB03300AE865D /* Localizable.strings */; };
+		CC46F630153AB03300AE865D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC46F62F153AB03300AE865D /* icon.png */; };
+		CC46F632153AB03300AE865D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC46F631153AB03300AE865D /* icon@2x.png */; };
+		CC46F634153AB03300AE865D /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CC46F633153AB03300AE865D /* icon-72.png */; };
+		CC46F637153AB03300AE865D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CC46F636153AB03300AE865D /* Default.png */; };
+		CC46F639153AB03300AE865D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC46F638153AB03300AE865D /* Default@2x.png */; };
+		CC46F63B153AB03300AE865D /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC46F63A153AB03300AE865D /* Capture.bundle */; };
+		CC46F63D153AB03300AE865D /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC46F63C153AB03300AE865D /* Cordova.plist */; };
+		CC46F641153AB03300AE865D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC46F640153AB03300AE865D /* AppDelegate.m */; };
+		CC46F644153AB03300AE865D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC46F643153AB03300AE865D /* MainViewController.m */; };
+		CC46F646153AB03300AE865D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC46F645153AB03300AE865D /* MainViewController.xib */; };
+		CC46F64A153AB03300AE865D /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = CC46F649153AB03300AE865D /* verify.sh */; };
+		CC46F651153AB05200AE865D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F650153AB05200AE865D /* EventKit.framework */; };
+		CC46F653153AB05900AE865D /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46F652153AB05900AE865D /* EventKitUI.framework */; };
+		CC46F655153AB0E600AE865D /* www in Resources */ = {isa = PBXBuildFile; fileRef = CC46F654153AB0E600AE865D /* www */; };
+		CC46F658153AB12900AE865D /* calendarPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CC46F657153AB12900AE865D /* calendarPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC46F5F4153AB03200AE865D /* CalendarPlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarPlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC46F5F8153AB03200AE865D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC46F5FA153AB03200AE865D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CC46F5FC153AB03200AE865D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CC46F5FE153AB03200AE865D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CC46F600153AB03200AE865D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		CC46F602153AB03200AE865D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CC46F604153AB03200AE865D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CC46F606153AB03200AE865D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CC46F608153AB03200AE865D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CC46F60A153AB03200AE865D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CC46F60C153AB03200AE865D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CC46F60E153AB03200AE865D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CC46F610153AB03200AE865D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CC46F614153AB03200AE865D /* CalendarPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalendarPlugin-Info.plist"; sourceTree = "<group>"; };
+		CC46F616153AB03200AE865D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC46F618153AB03200AE865D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC46F61A153AB03200AE865D /* CalendarPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalendarPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		CC46F61B153AB03200AE865D /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = /Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<absolute>"; };
+		CC46F620153AB03300AE865D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC46F624153AB03300AE865D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC46F628153AB03300AE865D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Resources/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC46F62C153AB03300AE865D /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Resources/se.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC46F62F153AB03300AE865D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
+		CC46F631153AB03300AE865D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icons/icon@2x.png"; sourceTree = "<group>"; };
+		CC46F633153AB03300AE865D /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "Resources/icons/icon-72.png"; sourceTree = "<group>"; };
+		CC46F636153AB03300AE865D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/splash/Default.png; sourceTree = "<group>"; };
+		CC46F638153AB03300AE865D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
+		CC46F63A153AB03300AE865D /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
+		CC46F63C153AB03300AE865D /* Cordova.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
+		CC46F63F153AB03300AE865D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		CC46F640153AB03300AE865D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		CC46F642153AB03300AE865D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		CC46F643153AB03300AE865D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		CC46F645153AB03300AE865D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
+		CC46F648153AB03300AE865D /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		CC46F649153AB03300AE865D /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		CC46F650153AB05200AE865D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		CC46F652153AB05900AE865D /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		CC46F654153AB0E600AE865D /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		CC46F656153AB12900AE865D /* calendarPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calendarPlugin.h; sourceTree = "<group>"; };
+		CC46F657153AB12900AE865D /* calendarPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = calendarPlugin.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC46F5EE153AB03200AE865D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC46F653153AB05900AE865D /* EventKitUI.framework in Frameworks */,
+				CC46F651153AB05200AE865D /* EventKit.framework in Frameworks */,
+				CC46F5F9153AB03200AE865D /* Foundation.framework in Frameworks */,
+				CC46F5FB153AB03200AE865D /* UIKit.framework in Frameworks */,
+				CC46F5FD153AB03200AE865D /* CoreGraphics.framework in Frameworks */,
+				CC46F5FF153AB03200AE865D /* AddressBook.framework in Frameworks */,
+				CC46F601153AB03200AE865D /* AddressBookUI.framework in Frameworks */,
+				CC46F603153AB03200AE865D /* AudioToolbox.framework in Frameworks */,
+				CC46F605153AB03200AE865D /* AVFoundation.framework in Frameworks */,
+				CC46F607153AB03200AE865D /* CoreLocation.framework in Frameworks */,
+				CC46F609153AB03200AE865D /* MediaPlayer.framework in Frameworks */,
+				CC46F60B153AB03200AE865D /* QuartzCore.framework in Frameworks */,
+				CC46F60D153AB03200AE865D /* SystemConfiguration.framework in Frameworks */,
+				CC46F60F153AB03200AE865D /* MobileCoreServices.framework in Frameworks */,
+				CC46F611153AB03200AE865D /* CoreMedia.framework in Frameworks */,
+				CC46F61C153AB03200AE865D /* Cordova.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC46F5F1153AB03200AE865D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC46F5E6153AB03200AE865D = {
+			isa = PBXGroup;
+			children = (
+				CC46F654153AB0E600AE865D /* www */,
+				CC46F612153AB03200AE865D /* CalendarPlugin */,
+				CC46F5F7153AB03200AE865D /* Frameworks */,
+				CC46F5F5153AB03200AE865D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC46F5F5153AB03200AE865D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F5F4153AB03200AE865D /* CalendarPlugin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC46F5F7153AB03200AE865D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F650153AB05200AE865D /* EventKit.framework */,
+				CC46F652153AB05900AE865D /* EventKitUI.framework */,
+				CC46F61B153AB03200AE865D /* Cordova.framework */,
+				CC46F5F8153AB03200AE865D /* Foundation.framework */,
+				CC46F5FA153AB03200AE865D /* UIKit.framework */,
+				CC46F5FC153AB03200AE865D /* CoreGraphics.framework */,
+				CC46F5FE153AB03200AE865D /* AddressBook.framework */,
+				CC46F600153AB03200AE865D /* AddressBookUI.framework */,
+				CC46F602153AB03200AE865D /* AudioToolbox.framework */,
+				CC46F604153AB03200AE865D /* AVFoundation.framework */,
+				CC46F606153AB03200AE865D /* CoreLocation.framework */,
+				CC46F608153AB03200AE865D /* MediaPlayer.framework */,
+				CC46F60A153AB03200AE865D /* QuartzCore.framework */,
+				CC46F60C153AB03200AE865D /* SystemConfiguration.framework */,
+				CC46F60E153AB03200AE865D /* MobileCoreServices.framework */,
+				CC46F610153AB03200AE865D /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC46F612153AB03200AE865D /* CalendarPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F61D153AB03300AE865D /* Resources */,
+				CC46F63E153AB03300AE865D /* Classes */,
+				CC46F647153AB03300AE865D /* Plugins */,
+				CC46F613153AB03200AE865D /* Supporting Files */,
+			);
+			path = CalendarPlugin;
+			sourceTree = "<group>";
+		};
+		CC46F613153AB03200AE865D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F614153AB03200AE865D /* CalendarPlugin-Info.plist */,
+				CC46F615153AB03200AE865D /* InfoPlist.strings */,
+				CC46F618153AB03200AE865D /* main.m */,
+				CC46F61A153AB03200AE865D /* CalendarPlugin-Prefix.pch */,
+				CC46F63C153AB03300AE865D /* Cordova.plist */,
+				CC46F645153AB03300AE865D /* MainViewController.xib */,
+				CC46F649153AB03300AE865D /* verify.sh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC46F61D153AB03300AE865D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F63A153AB03300AE865D /* Capture.bundle */,
+				CC46F61E153AB03300AE865D /* en.lproj */,
+				CC46F622153AB03300AE865D /* es.lproj */,
+				CC46F626153AB03300AE865D /* de.lproj */,
+				CC46F62A153AB03300AE865D /* se.lproj */,
+				CC46F62E153AB03300AE865D /* icons */,
+				CC46F635153AB03300AE865D /* splash */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CC46F61E153AB03300AE865D /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F61F153AB03300AE865D /* Localizable.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		CC46F622153AB03300AE865D /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F623153AB03300AE865D /* Localizable.strings */,
+			);
+			name = es.lproj;
+			sourceTree = "<group>";
+		};
+		CC46F626153AB03300AE865D /* de.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F627153AB03300AE865D /* Localizable.strings */,
+			);
+			name = de.lproj;
+			sourceTree = "<group>";
+		};
+		CC46F62A153AB03300AE865D /* se.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F62B153AB03300AE865D /* Localizable.strings */,
+			);
+			name = se.lproj;
+			sourceTree = "<group>";
+		};
+		CC46F62E153AB03300AE865D /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F62F153AB03300AE865D /* icon.png */,
+				CC46F631153AB03300AE865D /* icon@2x.png */,
+				CC46F633153AB03300AE865D /* icon-72.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		CC46F635153AB03300AE865D /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F636153AB03300AE865D /* Default.png */,
+				CC46F638153AB03300AE865D /* Default@2x.png */,
+			);
+			name = splash;
+			sourceTree = "<group>";
+		};
+		CC46F63E153AB03300AE865D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F63F153AB03300AE865D /* AppDelegate.h */,
+				CC46F640153AB03300AE865D /* AppDelegate.m */,
+				CC46F642153AB03300AE865D /* MainViewController.h */,
+				CC46F643153AB03300AE865D /* MainViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		CC46F647153AB03300AE865D /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				CC46F656153AB12900AE865D /* calendarPlugin.h */,
+				CC46F657153AB12900AE865D /* calendarPlugin.m */,
+				CC46F648153AB03300AE865D /* README */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC46F5F3153AB03200AE865D /* CalendarPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC46F64D153AB03300AE865D /* Build configuration list for PBXNativeTarget "CalendarPlugin" */;
+			buildPhases = (
+				CC46F5ED153AB03200AE865D /* Sources */,
+				CC46F5EE153AB03200AE865D /* Frameworks */,
+				CC46F5EF153AB03200AE865D /* Resources */,
+				CC46F5F0153AB03200AE865D /* Sources */,
+				CC46F5F1153AB03200AE865D /* Frameworks */,
+				CC46F5F2153AB03200AE865D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalendarPlugin;
+			productName = CalendarPlugin;
+			productReference = CC46F5F4153AB03200AE865D /* CalendarPlugin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC46F5E8153AB03200AE865D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Actv8, LLC";
+			};
+			buildConfigurationList = CC46F5EB153AB03200AE865D /* Build configuration list for PBXProject "CalendarPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+				de,
+				se,
+			);
+			mainGroup = CC46F5E6153AB03200AE865D;
+			productRefGroup = CC46F5F5153AB03200AE865D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC46F5F3153AB03200AE865D /* CalendarPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC46F5EF153AB03200AE865D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC46F617153AB03200AE865D /* InfoPlist.strings in Resources */,
+				CC46F621153AB03300AE865D /* Localizable.strings in Resources */,
+				CC46F625153AB03300AE865D /* Localizable.strings in Resources */,
+				CC46F629153AB03300AE865D /* Localizable.strings in Resources */,
+				CC46F62D153AB03300AE865D /* Localizable.strings in Resources */,
+				CC46F630153AB03300AE865D /* icon.png in Resources */,
+				CC46F632153AB03300AE865D /* icon@2x.png in Resources */,
+				CC46F634153AB03300AE865D /* icon-72.png in Resources */,
+				CC46F637153AB03300AE865D /* Default.png in Resources */,
+				CC46F639153AB03300AE865D /* Default@2x.png in Resources */,
+				CC46F63B153AB03300AE865D /* Capture.bundle in Resources */,
+				CC46F63D153AB03300AE865D /* Cordova.plist in Resources */,
+				CC46F646153AB03300AE865D /* MainViewController.xib in Resources */,
+				CC46F64A153AB03300AE865D /* verify.sh in Resources */,
+				CC46F655153AB0E600AE865D /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC46F5F2153AB03200AE865D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC46F5ED153AB03200AE865D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC46F619153AB03200AE865D /* main.m in Sources */,
+				CC46F641153AB03300AE865D /* AppDelegate.m in Sources */,
+				CC46F644153AB03300AE865D /* MainViewController.m in Sources */,
+				CC46F658153AB12900AE865D /* calendarPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC46F5F0153AB03200AE865D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC46F615153AB03200AE865D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC46F616153AB03200AE865D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CC46F61F153AB03300AE865D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC46F620153AB03300AE865D /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CC46F623153AB03300AE865D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC46F624153AB03300AE865D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CC46F627153AB03300AE865D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC46F628153AB03300AE865D /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CC46F62B153AB03300AE865D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC46F62C153AB03300AE865D /* se */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC46F64B153AB03300AE865D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC46F64C153AB03300AE865D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC46F64E153AB03300AE865D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalendarPlugin/CalendarPlugin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = "/Users/Shared/Cordova/Cordova.framework/Headers/**";
+				INFOPLIST_FILE = "CalendarPlugin/CalendarPlugin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CC46F64F153AB03300AE865D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalendarPlugin/CalendarPlugin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = "/Users/Shared/Cordova/Cordova.framework/Headers/**";
+				INFOPLIST_FILE = "CalendarPlugin/CalendarPlugin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC46F5EB153AB03200AE865D /* Build configuration list for PBXProject "CalendarPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC46F64B153AB03300AE865D /* Debug */,
+				CC46F64C153AB03300AE865D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC46F64D153AB03300AE865D /* Build configuration list for PBXNativeTarget "CalendarPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC46F64E153AB03300AE865D /* Debug */,
+				CC46F64F153AB03300AE865D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC46F5E8153AB03200AE865D /* Project object */;
+}
