@@ -115,15 +115,19 @@
         </script>
     </head>
     <body>
-        <div class="app">
+        
+        <div id="headerContainer">
             <h1>Calendar Plugin</h1>
             <p>This is a sample project for the calendar plugin.</p>
-            <button onclick="createMyEvent();">Add Event</button><br/>
-            <button onclick="findMyEvent();">Find Event</button><br/>
-            <button onclick="modifyMyEvent();">Modify Event</button><br/>
-            <button onclick="deleteMyEvent();">Delete Event</button><br/>
-            
         </div>
+        
+        <div id="buttonContainer">
+            <div class="ltblue button" onclick="createMyEvent();">Add Event</div><br/>
+            <div class="ltblue button" onclick="findMyEvent();">Find Event</div><br/>
+            <div class="ltblue button" onclick="modifyMyEvent();">Modify Event</div><br/>
+            <div class="ltblue button" onclick="deleteMyEvent();">Delete Event</div><br/>
+        </div>
+        
         <script type="text/javascript" src="cordova-2.3.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
