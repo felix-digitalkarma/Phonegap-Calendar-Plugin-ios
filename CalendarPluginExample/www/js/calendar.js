@@ -6,7 +6,6 @@
 // Contributors : 
 // Michael Brooks
 // Sean Bedford
-// 
 
 (function(cordova){
 
