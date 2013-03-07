@@ -29,25 +29,21 @@
 }
 
 - (void)initEventStoreWithCalendarCapabilities {
-    
-    // Check for EventStore that is useful
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) {
-        // Need to request calendar permissions
-        EKEventStore *localEventStore = [[EKEventStore alloc] init];
-        [localEventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error){
-            if (granted) {
-                self.eventStore = localEventStore;
-            }
-            else {
-                UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"No Event Support" message:@"There will be no support to view your calendar" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-                [av show];
-                [av release];
-            }
+    __block BOOL accessGranted = NO;
+    eventStore= [[EKEventStore alloc] init];
+    if([eventStore respondsToSelector:@selector(requestAccessToEntityType:completion:)]) {
+        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+        [eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+            accessGranted = granted;
+            dispatch_semaphore_signal(sema);
         }];
-        
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+    } else { // we're on iOS 5 or older
+        accessGranted = YES;
     }
-    else {
-        self.eventStore = [[EKEventStore alloc] init];
+    
+    if (accessGranted) {
+        self.eventStore = eventStore;
     }
 }
 
